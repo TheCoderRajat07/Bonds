@@ -1,0 +1,28 @@
+[
+    {
+        "id": 1,
+        "name": "Elegant Bracelet",
+        "image": "https://via.placeholder.com/400x400/ff7f7f/333333?text=Elegant+Bracelet",
+        "images": [
+            "https://via.placeholder.com/400x400/ff7f7f/333333?text=Elegant+Bracelet",
+            "https://via.placeholder.com/400x400/ffcc00/333333?text=Bracelet+Side",
+            "https://via.placeholder.com/400x400/daff7f/333333?text=Bracelet+Detail"
+        ],
+        "price": "$29.99",
+        "description": "A stunning bracelet to elevate your style.",
+        "category": "Bracelets"
+    },
+    {
+        "id": 2,
+        "name": "Gold Ring",
+        "image": "https://via.placeholder.com/400x400/daa520/333333?text=Gold+Ring",
+        "images": [
+            "https://via.placeholder.com/400x400/daa520/333333?text=Gold+Ring",
+            "https://via.placeholder.com/400x400/ffcc00/333333?text=Ring+Side",
+            "https://via.placeholder.com/400x400/daff7f/333333?text=Ring+Detail"
+        ],
+        "price": "$49.99",
+        "description": "A timeless gold ring for a luxurious look.",
+        "category": "Rings"
+    }
+]

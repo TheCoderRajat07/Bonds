@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Wearable Brand</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Your existing CSS file -->
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <nav>
+            <div class="logo">Wearable Brand</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="about-us.html">About Us</a></li>
+                <li><a href="contact-us.html" class="active">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section class="contact-hero">
+            <div class="contact-text">
+                <h1>Contact Us</h1>
+                <p>We’re here to help! Get in touch with us for any questions or inquiries.</p>
+            </div>
+        </section>
+
+        <section class="contact-details">
+            <h2>Reach Us</h2>
+            <div class="contact-grid">
+                <div class="contact-item">
+                    <i class="fa fa-phone"></i>
+                    <h3>Phone</h3>
+                    <p>+1 234 567 890</p>
+                </div>
+                <div class="contact-item">
+                    <i class="fa fa-envelope"></i>
+                    <h3>Email</h3>
+                    <p>support@wearablebrand.com</p>
+                </div>
+                <div class="contact-item">
+                    <i class="fa fa-map-marker"></i>
+                    <h3>Address</h3>
+                    <p>123 Fashion Street, New York, NY, USA</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-form">
+            <h2>Send Us a Message</h2>
+            <form action="mailto:support@wearablebrand.com" method="post" enctype="text/plain">
+                <div class="form-group">
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Your Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" placeholder="Write your message here..." required></textarea>
+                </div>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Wearable Brand. All rights reserved.</p>
+    </footer>
+
+    <!-- FontAwesome for icons (you can use a CDN link) -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</body>
+</html>

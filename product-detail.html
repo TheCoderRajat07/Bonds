@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Detail</title>
+    <link rel="stylesheet" href="PD.css"> <!-- Include your CSS here -->
+    <script src="PD.js" defer></script> <!-- Link your JavaScript file -->
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Wearable Brand</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="product-detail">
+            <div class="product-gallery">
+                <img id="mainImage" src="" alt="Product Image">
+                <div class="thumbnails">
+                    <!-- Thumbnails will be added dynamically -->
+                </div>
+            </div>
+            <div class="product-info">
+                <h1 id="productName"></h1>
+                <p id="productDescription"></p>
+                <div class="price" id="productPrice"></div>
+                <a id="buyNowBtn" class="btn" target="_blank">Buy Now on WhatsApp</a>
+            </div>
+        </section>
+
+        <section class="product-suggestions">
+            <h2>Similar Products</h2>
+            <div class="suggestions-grid" id="suggestionsGrid">
+                <!-- Suggestions will be added dynamically -->
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>

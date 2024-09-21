@@ -1,0 +1,183 @@
+/* About Us Page */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Navigation Bar */
+header {
+    background-color: #fff;
+    padding: 10px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.logo {
+    font-size: 1.5em;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Hero Section */
+.about-hero {
+    background-color: #f7f7f7;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.about-hero .about-text {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about-hero h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.about-hero p {
+    font-size: 1.2em;
+    color: #555;
+}
+
+/* Story Section */
+.about-story {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.about-story h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.about-story p {
+    font-size: 1.1em;
+    color: #333;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Values Section */
+.about-values {
+    background-color: #f7f7f7;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.about-values h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.value-item {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.value-item h3 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+.value-item p {
+    font-size: 1em;
+    color: #555;
+}
+
+/* Team Section */
+.about-team {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.about-team h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.team-member {
+    text-align: center;
+}
+
+.team-member img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.team-member h3 {
+    font-size: 1.3em;
+    margin-bottom: 10px;
+}
+
+.team-member p {
+    font-size: 1em;
+    color: #777;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+footer p {
+    margin: 0;
+}

@@ -1,0 +1,159 @@
+/* Navigation Bar */
+header {
+    background-color: #fff;
+    padding: 10px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.logo {
+    font-size: 1.5em;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Category Filter */
+.filter {
+    display: flex;
+    justify-content: center;
+    margin: 100px 0 20px; /* Add top margin to avoid overlap with navbar */
+}
+
+.filter-btn {
+    padding: 10px 20px;
+    margin: 0 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+}
+
+.filter-btn:hover {
+    background-color: #555;
+}
+
+.filter-btn.active {
+    background-color: #ff7f7f;
+}
+
+/* Shop Page */
+.shop {
+    padding: 50px;
+    text-align: center;
+}
+
+.shop h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    margin-top: 60px; /* Add margin to separate from filter */
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+/* Other styles remain the same */
+
+
+.product-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+    border-radius: 8px;
+}
+
+.product-card h3 {
+    font-size: 1.5em;
+    margin-top: 15px;
+}
+
+.product-card p {
+    color: #666;
+    margin: 10px 0;
+}
+
+.product-card .price {
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.product-card .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.product-card .btn:hover {
+    background-color: #555;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 10px 0;
+}
+
+.footer-links li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.footer-links li a {
+    color: white;
+    text-decoration: none;
+}

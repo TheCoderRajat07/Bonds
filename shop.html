@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop - Wearable Brand</title>
+    <link rel="stylesheet" href="shop.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <nav>
+            <div class="logo">Wearable Brand</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Category Filter Section -->
+    <section class="filter">
+        <button class="filter-btn" data-category="all">All</button>
+        <button class="filter-btn" data-category="Bracelets">Bracelets</button>
+        <button class="filter-btn" data-category="Pendants">Pendants</button>
+        <button class="filter-btn" data-category="Rings">Rings</button>
+        <button class="filter-btn" data-category="Earrings">Earrings</button>
+    </section>
+
+    <!-- Shop Page Content -->
+    <section class="shop">
+        <h2>Our Products</h2>
+        <div class="product-grid" id="productGrid">
+            <!-- Products will be loaded here dynamically -->
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Wearable Brand. All rights reserved.</p>
+        <ul class="footer-links">
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </footer>
+
+    <script src="shop.js"></script>
+</body>
+</html>

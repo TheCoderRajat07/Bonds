@@ -1,0 +1,388 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Navigation Bar */
+header {
+    background-color: #fff;
+    padding: 10px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.logo {
+    font-size: 1.5em;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+    margin-top: 80px;
+    position: relative;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.slides {
+    display: flex;
+    width: 300%;
+    height: 100%;
+}
+
+.slides input {
+    display: none;
+}
+
+.slide {
+    width: 100%;
+    transition: 0.5s;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.navigation-manual {
+    position: absolute;
+    width: 100%;
+    bottom: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn {
+    border: 2px solid #fff;
+    padding: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+    margin: 0 10px;
+}
+
+.manual-btn:hover {
+    background-color: #fff;
+}
+
+#slide1:checked ~ .slides {
+    transform: translateX(0);
+}
+
+#slide2:checked ~ .slides {
+    transform: translateX(-100%);
+}
+
+#slide3:checked ~ .slides {
+    transform: translateX(-200%);
+}
+
+/* Hero Content */
+.hero-content {
+    position: absolute;
+    text-align: center;
+    color: white;
+    z-index: 10;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.hero-content h1 {
+    font-size: 3em;
+    letter-spacing: 2px;
+}
+
+.hero-content p {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #555;
+}
+
+/* Featured Collections Section */
+.featured-collections {
+    padding: 50px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.featured-collections h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.collections {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.collection {
+    text-align: center;
+}
+
+.collection h3 {
+    margin-top: 10px;
+}
+
+/* Testimonials Section */
+.testimonials {
+    padding: 50px;
+    background-color: #f0f0f0;
+    text-align: center;
+}
+
+.testimonials h2 {
+    font-size: 2.5em;
+}
+
+.testimonial-cards {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.testimonial-card {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    width: 30%;
+}
+
+/* Newsletter Section */
+.newsletter {
+    padding: 50px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.newsletter h2 {
+    font-size: 2.5em;
+}
+
+.newsletter input {
+    padding: 10px;
+    width: 300px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+}
+
+.newsletter button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 10px 0;
+}
+
+.footer-links li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.footer-links li a {
+    color: white;
+    text-decoration: none;
+}
+
+
+
+
+
+/* Contact Us Page */
+
+/* Hero Section */
+.contact-hero {
+    background-color: #f7f7f7;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.contact-hero .contact-text {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.contact-hero h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.contact-hero p {
+    font-size: 1.2em;
+    color: #555;
+}
+
+/* Contact Details Section */
+.contact-details {
+    padding: 60px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.contact-details h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.contact-item {
+    background-color: #f7f7f7;
+    padding: 30px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.contact-item h3 {
+    font-size: 1.5em;
+    margin: 15px 0;
+}
+
+.contact-item p {
+    font-size: 1.1em;
+    color: #555;
+}
+
+.contact-item i {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Contact Form Section */
+.contact-form {
+    padding: 60px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.contact-form h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+}
+
+.contact-form form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: grid;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.form-group label {
+    font-size: 1.1em;
+    margin-bottom: 8px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 15px;
+    font-size: 1.1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-group textarea {
+    height: 150px;
+    resize: none;
+}
+
+button.btn {
+    background-color: #333;
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2em;
+}
+
+button.btn:hover {
+    background-color: #555;
+}
+
